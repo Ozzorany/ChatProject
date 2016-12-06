@@ -1,0 +1,12 @@
+body{
+    height:800px;
+}
+
+section{
+    height:70%;
+    border: 1px solid black;
+}
+
+footer{
+    height:30%;
+}
