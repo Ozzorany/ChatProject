@@ -14,8 +14,8 @@ window.onload = function () {
             var userNameSpan = document.createElement("span");
             var textSpan = document.createElement("span");
             var userdiv = document.createElement("div");
-            userNameSpan.innerHTML = messageObject.name + " : ";
-            textSpan.innerHTML = messageObject.text;
+            userNameSpan.appendChild(document.createTextNode(messageObject.name + " : "));
+            textSpan.appendChild(document.createTextNode(messageObject.text));
             textSpan.setAttribute("style", "color: " + messageObject.color);
             userdiv.appendChild(userNameSpan);
             userdiv.appendChild(textSpan);
